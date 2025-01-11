@@ -9,7 +9,7 @@ import AddSalaryForm from "./AddSalaryForm";
 const EmployeeList = () => {
   const dispatch = useDispatch();
   const { employees, loading, error } = useSelector((state) => state.employee);
-  const [editingEmployee, setEditingEmployee] = useState(null);
+  const [ editingEmployee, setEditingEmployee] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [showSalaryModal, setShowSalaryModal] = useState(false);
   const [selectedEmployee, setSelectedEmployee] = useState(null);
